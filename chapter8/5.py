@@ -8,6 +8,7 @@ if (n >2):
   for i in range(min,max+1):
     if(n%i == 0):
       count += 1
+      break
   if(count ==0):
     print("Prime")
   else:
