@@ -1,9 +1,9 @@
 def main():
   score = int(input("Please input the score"))
   grade =  ["F","F","F","F","F","F","F","F","F","F"]
-  grade.extend(["F","F","F","F","F","F","F","F","F","F"])
-  grade.extend(["F","F","F","F","F","F","F","F","F","F"])
-  grade.extend(["F","F","F","F","F","F","F","F","F","F"])
+  grade += (["F","F","F","F","F","F","F","F","F","F"])
+  grade += (["F","F","F","F","F","F","F","F","F","F"])
+  grade += (["F","F","F","F","F","F","F","F","F","F"])
   grade.extend(["F","F","F","F","F","F","F","F","F","F"])
   grade.extend(["F","F","F","F","F","F","F","F","F","F"])
   grade.extend(["D","D","D","D","D","D","D","D","D","D"])

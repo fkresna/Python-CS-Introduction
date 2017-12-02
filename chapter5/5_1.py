@@ -1,3 +1,21 @@
-number = int(input("Input a number between 0 and 9"))
-a = ["zero","one","two","three","four","five","six","seven","eight","nine"]
-print(a[number])
+# dateconvert2.py
+#     Converts day month and year numbers into two date formats
+
+def main():
+    # get the day month and year as numbers
+    day = int(input("Enter the day number: "))
+    month = int(input("Enter the month number: "))
+    year = int(input("Enter the year: "))
+
+    date1 = "{0}/{1}/{2}".format(month,day,year)
+
+    months = ["January", "February", "March", "April", 
+              "May", "June", "July", "August", 
+              "September", "October", "November", "December"]
+    monthStr = months[month-1]
+    date2 = "{0} {1} {2}".format(monthStr,day,year)
+
+    print("The date is", date1, "or", date2+".")
+
+main()
+
